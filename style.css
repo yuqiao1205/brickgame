@@ -1,0 +1,44 @@
+body {
+	background-color: #FFF;
+}
+
+
+img {
+	border-width: 0;
+}
+
+img#arrow, img#arrowImg {
+	width: 147px;
+	height: 82px;
+}
+
+#button1, #button2 {
+	width: 113px;
+	height: 33px;
+}
+
+.banner-centered {
+	text-align: center;
+}
+
+#adBanner {
+	width: 400px;
+	height: 75px;
+}
+
+.rule-center {
+    margin:auto;
+    width: 60%;
+    border: 3px solid #73AD21;
+    padding: 10px;
+	margin-top: 2%;
+  }
+.restart{
+	margin:auto;
+	margin-top: 2%;
+    width: 4%;
+    border: 3px solid #ad8f21;
+    padding: 10px;
+	text-align: center;
+
+  }
