@@ -1,11 +1,11 @@
 body {
-	background-color: #FFF;
+	background-color: #cde4f1;
 }
 
 
-img {
+/* img {
 	border-width: 0;
-}
+} */
 
 img#arrow, img#arrowImg {
 	width: 147px;
@@ -22,24 +22,29 @@ img#arrow, img#arrowImg {
 }
 
 #adBanner {
-	width: 400px;
-	height: 75px;
+	width: 700px;
+	height: 120px;
 }
 
 .rule-center {
     margin:auto;
-    width: 25%;
-    border: 3px solid #73AD21;
+    width: 35%;
+    border: 3px solid #366cd1;
     padding: 10px;
 	margin-top: 2%;
 	text-align: center;
+	font-size: 23px;
   }
 .restart{
 	margin:auto;
 	margin-top: 2%;
     width: 4%;
-    border: 3px solid #ad8f21;
+
     padding: 10px;
 	text-align: center;
 
+  }
+
+  .left-align {
+	text-align: left;
   }

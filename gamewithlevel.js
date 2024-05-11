@@ -209,11 +209,4 @@ if (result = 1) {
     // player lost
     // reload
 }
-Footer
-© 2022 GitHub, Inc.
-Footer navigation
-Terms
-Privacy
-Security
-Status
-Docs
+

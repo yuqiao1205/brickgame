@@ -13,8 +13,8 @@ function PaddleAttack() {
     this.y = this.canvas.height - 30;
 
     // Initialize the velocity of the ball.
-    this.dx = 4;
-    this.dy = -4;
+    this.dx = 2;
+    this.dy = -2;
 
     // Set board size
     this.bh = 15;
