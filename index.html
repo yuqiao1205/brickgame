@@ -1,58 +1,63 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Paddle Attack</title>
-    <style>
-        * {
-            padding: 0;
-            margin: 0;
-        }
 
-        canvas {
-            background: rgb(244, 235, 235);
-            display: block;
-            margin: 0 auto;
-        }
-    </style>
-    
-    <link rel="stylesheet" href="style.css"> <!-- Style for banner -->
-
-    <script language="javascript">
-
-        // Calls the py_initBannerLink function when the window finishes loading.
-        window.onload = py_initBannerLink;
-    </script>
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="style.css" />
 </head>
- 
+
 <body>
+    <div class="page">
+        <header class="header">
+            <div class="brand">
+                <div class="kicker">Brick breaker</div>
+                <h1>Lauren's Paddle Attack</h1>
+                <p class="sub">Move with &larr; &rarr; / mouse &middot; Pause with Space &middot; Clear all blocks to level up</p>
+            </div>
 
-    <div class="banner-centered">
-        <a href="japanhoppers.com/en"><img src="images/banner1.png" id="adBanner" alt="ad banner"></a>
+            <div class="header-actions">
+                <a class="button button-ghost" href="index.html">Restart</a>
+            </div>
+        </header>
+
+        <div class="banner-centered">
+            <a class="banner" href="https://japanhoppers.com/en" target="_blank" rel="noopener noreferrer">
+                <img src="images/banner1.png" id="adBanner" alt="Sponsor banner" />
+            </a>
+        </div>
+
+        <main class="main">
+            <section class="game-card" aria-label="Game">
+                <canvas id="ypGameCanvas" width="1000" height="500"></canvas>
+                <div class="game-hint" aria-hidden="true">
+                    <span class="chip">Move: &larr; &rarr; / Mouse</span>
+                    <span class="chip">Pause: Space</span>
+                    <span class="chip">Goal: Clear all blocks</span>
+                </div>
+            </section>
+
+            <aside class="rules-card" aria-label="Game rules">
+                <h2>Game rules</h2>
+                <ul class="rules">
+                    <li>Each block is worth <strong>1 point</strong>.</li>
+                    <li>Clear all blocks to advance to the <strong>next level</strong>.</li>
+                    <li>The ball gets <strong>faster</strong> each level.</li>
+                    <li>You have <strong>10 chances</strong>. Don't let the ball drop.</li>
+                </ul>
+
+                <div class="rules-actions">
+                    <a class="button" href="index.html">Restart game</a>
+                </div>
+            </aside>
+        </main>
     </div>
-    <center>
-        <canvas id="ypGameCanvas" width="1000" height="500"></canvas>
-    </center>
-
 
     <script src="game.js"></script>
-
-    <div class="rule-center">
-       
-        <h2> Game Rules</h2>
-        <ul class="left-align">
-        <p> Each block is worth 1 point.</p>
-        <p> When all blocks are eliminated, you pass on to the next level.</p>
-        <p> The ball becomes faster for each level!</p>
-        <p> Arrow keys or mouse can  move the paddle. Use the space bar to pause. Good luck!</p>
-    </ul>
-   
-   
-    <p class="restart"><a href="game.html">Restart Game</a></p>  
-</div> 
-     
 </body>
 
 </html>
